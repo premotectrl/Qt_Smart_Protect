@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file alias="Style.qml">assets/Style.qml</file>
+         <file alias="qmldir">assets/qmldir</file>
+          <file alias="fontawesome.ttf">assets/fa-regular-400.ttf</file>
+    </qresource>
+</RCC>
