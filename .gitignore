@@ -1,2 +1,3 @@
 # exclude these files from being tracked and pushed to Git
 Binaries
+cm-lib/build
