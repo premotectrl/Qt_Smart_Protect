@@ -34,34 +34,36 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         source/models/client.cpp \
     source/controllers/mastercontroller.cpp \
-   source/controllers/navigation-controller.cpp\
+    source/controllers/navigation-controller.cpp\
     source/framework/command.cpp \
     source/controllers/commandcontroller.cpp \
     source/data/data-decorator.cpp \
     source/data/string-decorator.cpp \
     source/data/int-decorator.cpp \
-    #source/data/datetime-decorator.cpp \
+    source/data/datetime-decorator.cpp \
     source/data/enumerator-decorator.cpp \
     source/data/entity.cpp \
     source/data/entity-collection.cpp \
     source/models/address.cpp \
-    source/models/appointment.cpp
+    source/models/appointment.cpp \
+    source/models/contact.cpp
 
 HEADERS += source/models/client.h \
         source/cm-lib_global.h \
     source/controllers/mastercontroller.h \
- source/controllers/navigation-controller.h \
+    source/controllers/navigation-controller.h \
     source/framework/command.h \
     source/controllers/commandcontroller.h \
     source/data/data-decorator.h \
     source/data/string-decorator.h \
     source/data/int-decorator.h \
-   # source/data/datetime-decorator.h \
+    source/data/datetime-decorator.h \
     source/data/enumerator-decorator.h \
     source/data/entity.h \
     source/data/entity-collection.h \
     source/models/address.h \
-    source/models/appointment.h
+    source/models/appointment.h \
+    source/models/contact.h
 
 
 DESTDIR = $$PWD/../binaries/$$DESTINATION_PATH

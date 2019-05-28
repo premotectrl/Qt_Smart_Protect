@@ -27,7 +27,7 @@ namespace data {
     DateTimeDecorator& DateTimeDecorator::setValue(const QDateTime &value){
         if(value != implementation->value){
             //...validation here if required..
-           // implementation->value = value;
+           implementation->value = value;
             emit valueChanged();
         }
         return *this;

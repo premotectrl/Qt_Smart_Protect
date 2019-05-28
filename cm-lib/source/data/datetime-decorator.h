@@ -16,7 +16,7 @@ namespace data {
 class CMLIBSHARED_EXPORT DateTimeDecorator : public DataDecorator
 {
     Q_OBJECT
-    Q_PROPERTY(int ui_value READ value WRITE setValue NOTIFY valueChanged)
+    Q_PROPERTY(QDateTime ui_value READ value WRITE setValue NOTIFY valueChanged)
     Q_PROPERTY(QString ui_iso8601String READ toISO8601String NOTIFY valueChanged)
     Q_PROPERTY(QString ui_prettyDateString READ toPrettyDateString NOTIFY valueChanged)
     Q_PROPERTY(QString ui_prettyTimeString READ toPrettyTimeString NOTIFY valueChanged)
@@ -28,13 +28,12 @@ public:
                           const QString& label ="", const QDateTime &value = QDateTime::currentDateTime());
     ~DateTimeDecorator() override; //override added here by Peter!
 
-    DateTimeDecorator& setValue(const QDateTime& valueT);
+    DateTimeDecorator& setValue(const QDateTime& value);
     QDateTime value() const;
     QString toISO8601String()const;
     QString toPrettyTimeString()const;
     QString toPrettyDateString()const;
     QString toPrettyString()const;
-
 
     QJsonValue jsonValue() const override;
     void update(const QJsonObject& jsonObject) override;

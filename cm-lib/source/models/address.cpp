@@ -18,7 +18,7 @@ Address::Address(QObject *parent, const QJsonObject &json) : Address(parent)
     update(json);
 }
 
-QString Address::fullAdress() const
+QString Address::fullAddress() const
 {
     return building->value() + "" + street->value() + "\n" + city->value() +"\n" + postcode->value();
 }
