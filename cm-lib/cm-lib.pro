@@ -43,7 +43,9 @@ SOURCES += \
     #source/data/datetime-decorator.cpp \
     source/data/enumerator-decorator.cpp \
     source/data/entity.cpp \
-    source/data/entity-collection.cpp
+    source/data/entity-collection.cpp \
+    source/models/address.cpp \
+    source/models/appointment.cpp
 
 HEADERS += source/models/client.h \
         source/cm-lib_global.h \
@@ -57,7 +59,9 @@ HEADERS += source/models/client.h \
    # source/data/datetime-decorator.h \
     source/data/enumerator-decorator.h \
     source/data/entity.h \
-    source/data/entity-collection.h
+    source/data/entity-collection.h \
+    source/models/address.h \
+    source/models/appointment.h
 
 
 DESTDIR = $$PWD/../binaries/$$DESTINATION_PATH
