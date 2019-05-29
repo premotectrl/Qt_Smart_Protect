@@ -25,9 +25,9 @@ public:
 
     IntDecorator& setValue(int value);
     int value() const;
-
     QJsonValue jsonValue() const override;
     void update(const QJsonObject& jsonObject) override;
+
 signals:
     void valueChanged();
 

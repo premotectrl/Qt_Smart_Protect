@@ -6,6 +6,8 @@
 #include <cm-lib_global.h>
 #include <models/client.h>
 
+using namespace cm::models;
+
 namespace cm {
 namespace controllers {
 
@@ -22,9 +24,9 @@ public:
 	signals:
 			void goCreateClientView();
 			void goDashboardView();
-            void goEditClientView(cm::models::Client* client);
+            //void goEditClientView(cm::models::Client* client);
+            void goEditClientView();
 			void goFindClientView();
-
 };
 }}
 #endif

@@ -2,7 +2,7 @@
 //#include <QObject>
 
 #include <cm-lib_global.h>
-#include <models/client.h>
+//#include <models/client.h>
 
 namespace cm {
 namespace controllers {
