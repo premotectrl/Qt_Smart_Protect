@@ -24,7 +24,7 @@ public:
 	signals:
 			void goCreateClientView();
 			void goDashboardView();
-            //void goEditClientView(cm::models::Client* client);
+            void goEditClientView(cm::models::Client* client);
             void goEditClientView();
 			void goFindClientView();
 };

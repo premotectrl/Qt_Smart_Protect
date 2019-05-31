@@ -28,7 +28,7 @@ class CMLIBSHARED_EXPORT Client : public data::Entity
 
 public:
     explicit Client(QObject *parent = nullptr);
-    Client (QObject *parent, const QJsonObject &json);
+    Client (QObject *parent, const QJsonObject &json); // different constructor to base class
 
     data::StringDecorator *reference{nullptr};
     data::StringDecorator *name{nullptr};

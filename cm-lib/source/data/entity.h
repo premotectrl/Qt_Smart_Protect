@@ -22,7 +22,7 @@ public:
     Entity(QObject* parent, const QString& key, const QJsonObject & jsonObject);
     virtual  ~Entity();
 
-public:
+//public:
     const QString& key() const;
     void update(const QJsonObject& jsonObject);
     QJsonObject toJson() const;
@@ -37,7 +37,7 @@ protected:
     DataDecorator* addDataItem(DataDecorator* dataDecorator);
     EntityCollectionBase* addChildCollection(EntityCollectionBase* entityCollection);
 
-protected:
+//protected:
     class Implementation;
     QScopedPointer<Implementation> implementation;
 };

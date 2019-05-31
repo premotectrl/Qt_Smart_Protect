@@ -5,7 +5,7 @@
 //namespace controllers {
 
 using namespace cm::controllers;
-//using namespace cm::models;
+using namespace cm::models;
 
 class MasterController::Implementation
 {
@@ -15,7 +15,7 @@ class MasterController::Implementation
         {
             navigationController = new NavigationController(masterController);
             commandController = new CommandController(masterController);
-            //newClient = new Client(masterController);
+            newClient = new Client(masterController);
         }
 
         MasterController* masterController{nullptr};
@@ -23,7 +23,7 @@ class MasterController::Implementation
         QString WelcomeMessage = "This is the MasterController to Tom";
         CommandController* commandController{nullptr};
         // added 28/05/2019
-        //Client *newClient{nullptr};
+       Client* newClient{nullptr};
 };
 
 MasterController::MasterController(QObject* parent)
@@ -46,9 +46,9 @@ CommandController* MasterController::commandController(){
     return implementation -> commandController;
 }
 
-/* Client* MasterController::newClient(){
+Client* MasterController::newClient(){
     return implementation->newClient;
-} */
+}
 
 
 //}}

@@ -2,12 +2,15 @@
 #include <QJsonArray>
 
 using namespace cm::data;
+using namespace std;
 
 class Entity::Implementation{
 
 public:
-    Implementation(Entity* _entity, const QString& _key): entity(_entity), key(_key){}
-    Entity entity{nullptr};
+    Implementation(Entity* _entity, const QString& _key): entity(_entity), key(_key){
+
+    }
+    Entity *entity{nullptr};
     QString key;
     std::map<QString, Entity*> childEntities;
     std::map<QString, DataDecorator*> dataDecorators;
