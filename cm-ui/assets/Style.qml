@@ -25,6 +25,14 @@ Item {
     readonly property int  pixelSizeCommandBarText: 12
     readonly property real widthCommandButton: 80
     readonly property real heightCommandButton: widthCommandButton
+
+    readonly property real sizeScreenMargin: 20
+    readonly property color colourDataControlsBackground: "#ffffff"
+    readonly property color colourDataControlsFont: "#131313"
+    readonly property int pixelSizeDataControls: 18
+    readonly property real widthDataControls: 400
+    readonly property real heightDataControls: 40
+
     FontLoader{
     id:fontawesomeLoader
     source: "qrc:/assets/fontawesome.ttf"
